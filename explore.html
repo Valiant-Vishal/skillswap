@@ -1,0 +1,94 @@
+explore.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Skills - SkillSwap</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/explore.css"> <!-- Link to the new explore.css -->
+    <script defer src="scripts/theme.js"></script>
+    <script defer src="scripts/sidebar.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo" id="sidebar-toggle">
+                    <img src="assets/favicon.svg" alt="SkillSwap Logo">
+                    <span class="site-name">SkillSwap</span>
+                </div>
+            </div>
+            <ul class="menu">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="explore.html" class="nav-link">
+                            <i class="fas fa-search"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="message.html" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-bookmark"></i>
+                            <span>Saved</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <a href="profile.html">
+                    <div class="profile">👤 Profile</div>
+                </a>
+                <button id="theme-toggle">Toggle Theme</button>
+            </header>
+            
+            <section class="content">
+                <div class="welcome-section">
+                    <h2>Explore Skills 🔍</h2>
+                    <p>Discover new skills and opportunities to learn!</p>
+                </div>
+                
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for skills or mentors...">
+                    <button>Search</button>
+                </div>
+
+                <div class="skills-list">
+                    <h3>Available Skills</h3>
+                    <div class="skill-card">Web Development - Join a Workshop</div>
+                    <div class="skill-card">Data Science - Find a Mentor</div>
+                    <div class="skill-card">Digital Marketing - Online Course</div>
+                    <div class="skill-card">Photography - Skill Swap Event</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+

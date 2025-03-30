@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap Profile</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <script defer src="scripts/theme.js"></script>
+    <script defer src="scripts/sidebar.js"></script>
+    <script defer src="scripts/profile.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img src="assets/favicon.svg" alt="SkillSwap Logo" class="logo">
+            <h2>SkillSwap</h2>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="#" class="nav-item"><i class="fas fa-search"></i> Explore</a>
+            <a href="#" class="nav-item active"><i class="fas fa-envelope"></i> Messages</a>
+            <a href="#" class="nav-item"><i class="fas fa-bookmark"></i> Saved</a>
+            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Settings</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Profile Header -->
+        <header class="profile-header">
+            <h2><i class="fas fa-user"></i> Profile</h2>
+            <button class="dark-mode-toggle">🌙 Dark Mode</button>
+        </header>
+
+        <div class="profile-container">
+            <div class="profile-info">
+                <img src="images/random-pfp.jpg" alt="User Profile" class="profile-pic">
+            </div>
+            <div class="profile-details">
+                <h1 class="profile-name">SkillSwap User</h1>
+                <p class="profile-location">New York, USA</p>
+                <p class="profile-stats">
+                    <span>112 Followers</span> •
+                    <span>97 Following</span> 
+                </p>
+            </div>
+            <div class="profile-actions">
+                <button class="btn follow-btn">Follow</button>
+                <button class="btn message-btn">Message</button>
+                <button class="btn edit-profile-btn">Edit Profile</button>
+            </div>
+        </div>
+    </div>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="gallery-item"><img src="images/photo1.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item"><img src="images/photo2.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item"><img src="images/photo3.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item"><img src="images/photo4.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item"><img src="images/photo5.jpg" alt="Gallery Image"></div>
+            <div class="gallery-item"><img src="images/photo6.jpg" alt="Gallery Image"></div>
+        </section>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button class="btn load-more-btn">Load more</button>
+        </div>
+    </div>
+</body>
+</html>

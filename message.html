@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - SkillSwap</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/message.css"> <!-- New messages.css -->
+    <script defer src="scripts/theme.js"></script>
+    <script defer src="scripts/sidebar.js"></script>
+    <script defer src="scripts/message.js"></script> <!-- Chat script -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo" id="sidebar-toggle">
+                    <img src="assets/favicon.svg" alt="SkillSwap Logo">
+                    <span class="site-name">SkillSwap</span>
+                </div>
+            </div>
+            <ul class="menu">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="dashboard.html" class="nav-link">
+                            <i class="fas fa-home"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="explore.html" class="nav-link">
+                            <i class="fas fa-search"></i>
+                            <span>Explore</span>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="messages.html" class="nav-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Messages</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-bookmark"></i>
+                            <span>Saved</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="fas fa-cog"></i>
+                            <span>Settings</span>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <header class="topbar">
+                <a href="profile.html">
+                    <div class="profile">👤 Profile</div>
+                </a>
+                <button id="theme-toggle">Toggle Theme</button>
+            </header>
+            
+            <section class="chat-container">
+                <aside class="chat-sidebar">
+                    <div class="chat-search">
+                        <input type="text" placeholder="Search conversations...">
+                    </div>
+                    <ul class="chat-list">
+                        <li class="chat-item active">
+                            <span class="username">John Doe</span>
+                            <p class="last-message">Hey, are you free for a quick call?</p>
+                            <span class="timestamp">2 min ago</span>
+                        </li>
+                        <li class="chat-item">
+                            <span class="username">Jane Smith</span>
+                            <p class="last-message">Thanks for the help!</p>
+                            <span class="timestamp">1 hour ago</span>
+                        </li>
+                    </ul>
+                </aside>
+                
+                <div class="chat-window">
+                    <header class="chat-header">
+                        <h2>John Doe</h2>
+                        <span class="status">Online</span>
+                    </header>
+                    <div class="messages">
+                        <div class="message received">
+                            <span class="sender">John Doe</span>
+                            <p class="text">Hey, are you free for a quick call?</p>
+                            <span class="time">2 min ago</span>
+                        </div>
+                        <div class="message sent">
+                            <span class="sender">You</span>
+                            <p class="text">Sure! Let me know when.</p>
+                            <span class="time">Just now</span>
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <input type="text" placeholder="Type a message..." class="message-input">
+                        <button class="send-button"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
